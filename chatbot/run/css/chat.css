@@ -1,0 +1,156 @@
+.bar{
+    position: fixed;
+    bottom: 0;
+    right: 55px;
+    box-shadow: 0 9px 16px 0 rgba(0,0,0,0);
+}
+.down{
+    background-color: darkmagenta;
+    color: white;
+    cursor: pointer;
+    padding: 20px;
+    width: 360px;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    border-radius: 10px 10px 0px 0px;
+    border: 4px solid whitesmoke;
+    border-bottom: none;
+}
+.context{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in;
+    background-color: aquamarine;
+
+}
+.chat-block{
+    width: 360px;
+    background: white;
+    text-align: center;
+    overflow: auto;
+    scroll-behavior: none;
+    height: max-content;
+    transition: max-height 0.3s ease-out;
+}
+.container{
+    min-height: 500px;
+    bottom: 0%;
+    position: relative;
+}
+.chat-con{
+    max-height: 500px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    scroll-behavior: smooth;
+    hyphens: auto;
+}
+.chat-con::-webkit-scrollbar{
+    display: none;
+}
+.block{
+    display: flex;
+    float: left;
+    box-sizing: border-box;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    background-color: wheat;
+    border-radius: 12px 12px 1px 1px;
+    padding: 11px 0px 11px 0px;
+}
+.bar-icon{
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    width: 25%;
+    float: right;
+    font-size: 22px;
+}
+#icon:hover{
+    opacity: 0.9;
+}
+#userIp{
+    width: 75%;
+    cursor: pointer;
+}
+.ipBox{
+    float: left;
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 18px;
+    color: black;
+    background-color: peachpuff;
+    outline: none;
+}
+.userText{
+    color: bisque;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    font-weight: normal;
+    text-align: right;
+    clear: both;
+}
+.userText span{
+    line-height: 1.5em;
+    display: inline-block;
+    background: purple;
+    padding: 10px;
+    border-radius: 8px;
+    border-bottom-right-radius: 2px;
+    max-width: 80%;
+    margin-right:11px ;
+    animation: floatup .6s forwards;
+}
+.botText{
+    color: grey;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    text-align: left;
+}
+.botText span{
+    line-height: 1.5em;
+    background: yellow;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 8px;
+    border-bottom-right-radius: 2px;
+    max-width: 80%;
+    margin-right:11px ;
+    animation: floatup .1s forwards;
+}
+@keyframes floatup{
+    from{
+        transform: translateY(14px);
+        opacity: .0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@media screen and (max-width:650px) {
+    .chat-block{
+        width: 100%;
+        border-radius: 0px;
+    }
+    .bar{
+        position: fixed;
+        bottom: 0;
+        border-top: 4px solid wheat;
+        border-radius: 0px;
+    }
+    .down{
+        width: 100%;
+        border: 0px;
+        border-top: 3px solid white;
+        border-radius: 0px;
+    }
+    
+}

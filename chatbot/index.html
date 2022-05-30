@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAT BOT.</title>
+    <link rel="stylesheet" href="run/css/chat.css">
+    <link rel="stylesheet" href="run/css/up.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <!--navigation bar of chatbot-->
+    <div class="bar">
+        <button id="chatb" type="button" class="down">Let's chat!
+            <i id="icon" style="color: whitesmoke;" class="fa fa-fw fa-comments-o"></i>
+        </button>
+    <div class="context">
+        <div class="chat-block">
+            <!--message container-->
+            <div class="container">
+            <div class="chat-con">
+                    <!--messages-->
+                    <div id="box">
+                        <h5 id="timestamp"></h5>
+                        <p id="first-message" class="botText"><span>Loading...!!!</span></p>
+                    </div>
+
+                    <!--User input-->
+                    <div class="input">
+                        <div id="userIp">
+                            <input type="text" id="textIp" class="ipBox" name="msg"
+                            placeholder="Press 'Enter' to send a message">
+                            <p></p>
+                        </div>
+
+                        <div class="bar-icon">
+                            <i id="icon" style="color: brown;" class="fa fa-fw fa-heart" onclick="heartButton()"></i>
+                            <i id="icon" style="color: rebeccapurple;" class="fa fa-fw fa-send" onclick="sendButton()"></i>
+                        </div>
+                    </div>
+                    <div id="bar-below"></div>
+                    <p></p>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="run/scripts/idk.js"></script>
+    <script src="run/scripts/chat.js"></script>
+
+</html>
